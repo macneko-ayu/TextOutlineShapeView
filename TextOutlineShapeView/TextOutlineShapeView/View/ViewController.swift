@@ -18,17 +18,17 @@ class ViewController: UIViewController {
         guard let font = UIFont(name: "HiraKakuProN-W6", size: 36) else { return }
 
         let textOptions = TextOutlineShapeView.TextOptions(text: str,
-                                                      font: font,
-                                                      lineSpacing: 10,
-                                                      textAlignment: .left)
+                                                           font: font,
+                                                           lineSpacing: 10,
+                                                           textAlignment: .left)
         let shapeOptions = TextOutlineShapeView.ShapeOptions(lineJoin: .round,
-                                                        fillColor: UIColor.white.cgColor,
-                                                        strokeColor: UIColor.blue.cgColor,
-                                                        lineWidth: 5,
-                                                        shadowColor: UIColor.black.cgColor,
-                                                        shadowOffset: CGSize(width: 3, height: 3),
-                                                        shadowRadius: 5,
-                                                        shadowOpacity: 0.6)
+                                                             fillColor: UIColor.white.cgColor,
+                                                             strokeColor: UIColor.blue.cgColor,
+                                                             lineWidth: 5,
+                                                             shadowColor: UIColor.black.cgColor,
+                                                             shadowOffset: CGSize(width: 3, height: 3),
+                                                             shadowRadius: 5,
+                                                             shadowOpacity: 0.6)
         let shapeView = TextOutlineShapeView(textOptions: textOptions, shapeOptions: shapeOptions)
         self.view.addSubview(shapeView)
 
